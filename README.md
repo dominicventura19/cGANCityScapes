@@ -29,7 +29,10 @@ The discriminator tries to distinguish between the real image and the fake image
 
 Latent samples are fed to the GAN while we set the expected outcome (label) to 1 (real) as we expect the generator to produce realistic looking images and we expect the discriminator to say it's real. But, the generator will initially produce a bad or blurry image and the loss value will be high (this is because the weights are random). So, back-propogation updates the generator's weights to produce more realistic looking images as the training continues. This is how the generator is trained. 
 
-![](https://github.com/dominicventura19/cGANCityScapes/blob/main/slide_photos/gan_overall.png)
+<p align="center">
+  <img width="460" height="300" src="https://github.com/dominicventura19/cGANCityScapes/blob/main/slide_photos/gan_overall.png">
+</p>
+
           Overall view of how a GAN works.
 
 # cGAN

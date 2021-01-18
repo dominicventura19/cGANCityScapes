@@ -20,3 +20,5 @@ Here we use a conditional GAN (cGAN) to do this mapping. A cGAN learns the mappi
 A generative adverserial network (GAN) is a class of machine learning frameworks that is comprised of two neural networks: a generator and a discriminator.
 
 The generator generates some random noise (because the weights are random) and generates an image as output.
+
+![](https://github.com/dominicventura19/cGANCityScapes/blob/main/slide_photos/generator.png)

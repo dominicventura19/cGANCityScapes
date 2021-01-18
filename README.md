@@ -6,3 +6,5 @@ Note: GANs can take a long time to train. I did 150 epochs on my school's server
 Dataset used can be found [here](https://www.kaggle.com/vikramtiwari/pix2pix-dataset).
 
 Plots of the generator and discriminator losses can be viewed [here](https://tensorboard.dev/experiment/HnZe4oRhRBi3oK98evaKLg/#scalars).
+
+#

@@ -42,8 +42,16 @@ Overall view of how a GAN works.
 
 # cGAN
 
-A limitation of the
+A limitation of the GANs is that it can generate a random image from the domain (train set), which we have no control over. There is a complex relationship between the points in the latent space to the generated image that is difficult to map. 
 
+Alternatively, a GAN can be trained in such a way that both the generator and discriminator are conditioned on the class label. This means that when the trained generator model is used as a standalone model to generate images in the domain, images of a given class label can be generared. This is a cGAN.
+
+## How It Works
+
+Before, images were being fed to both the generator and discriminator as the only input, but now we will be feeding class information to both networks. Now, the generator takes random noise and a one-hot encoded class label as input and outputs a fake image of a particular class. Then, the discriminator takes an image with one-hot labels added as depth to the image (channels) i.e. if you have an image of 28x28x1 size and a one-hot vector of size n, then the image size will be 28x28x(n+1). Finally, the disciminator outputs whether the image belongs to that class or not, i.e. real or fake.
+
+
+![](https://github.com/dominicventura19/cGANCityScapes/blob/main/half_speed.gif)
 
 
 
